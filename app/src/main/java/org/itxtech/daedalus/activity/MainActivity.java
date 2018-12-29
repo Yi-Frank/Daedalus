@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public static final int FRAGMENT_RULES = 4;
     public static final int FRAGMENT_DNS_SERVERS = 5;
     public static final int FRAGMENT_LOG = 6;
+    public static final int PRAGMENT_APP_SELECT = 7;
 
     public static final String LAUNCH_NEED_RECREATE = "org.itxtech.daedalus.activity.MainActivity.LAUNCH_NEED_RECREATE";
 
@@ -239,6 +240,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case FRAGMENT_SETTINGS:
                 switchFragment(SettingsFragment.class);
+                break;
+            case PRAGMENT_APP_SELECT:
+                switchFragment(ApplicationSelectFragment.class);
                 break;
             case FRAGMENT_LOG:
                 switchFragment(LogFragment.class);
